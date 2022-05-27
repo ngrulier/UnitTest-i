@@ -1,0 +1,29 @@
+liste des tables pour Unit-i
+
+- obj-referential : les objets ? tester
+- obj-parameters : les paramettres IO -> obtenu par la commande "discover-i"
+- obj-x-ref : les références croisées de l'objets ? tester 
+- parameters-values : valeurs saisie et attendues des paramettres IO
+- test-campaign : les campagnes de tests
+- campaign-instances : les instances des campagnes de tests
+- test-instance : les instances de tests lanc?s
+- 
+
+
+la Commande discover-i :
+selection de l'objet ou source ? tester (pgm srvpgm) + module (*ALL) + nom proc?dure (*all)
+- si source : compilation dans qtemp avec pgmimfo(*pcml:*module)
+- recherche si il existe un pcml pour le cuoople objets/proc?dure
+  -> si pas de pcml : recmpilation dans qtemp avec l'option pgmimfo(*pcml:*module)
+  
+- recherche des x-ref (DB et pgm/srvpgm)
+  - on ne prend pas en compte la lib mais *LIBL : on peut demander ? l'utilisateur quelle option il préfére pour cette lib : *LIBL, *FOUNDED , <LIB NAME>
+
+
+Création du cas de tests :
+- valeurs en entrée
+- valeurs attendues en sortie 
+
+
+Lancement du test : 
+

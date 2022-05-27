@@ -1,0 +1,30 @@
+/QopenSys/pkgs/bin/bash 
+
+
+qu'est ce qu'on test :
+    - un programme (entry module = *objname)
+	- une procédure d'un module
+	- une procédure d'un programme de service 
+	
+	
+
+1 - je sélectionne un programme 
+   - existe-t-il un pcml dans le programme (voir dsppcmlr)
+   - Si non existe :
+   - 	je cherche le source associé au  (QSYS2.PROGRAM_INFO join QSYS2.BOUND_MODULE_INFO  )
+   - 	je recompile avec le pgminfo(*PCML:*MODULE) et option *UNRSLVREF
+   - je recherche les io en faisant un extract du pcml (dsppcmlr) 
+   - 	j'alimente la base de données pour cette procédure (  )
+   -    je génère le /copy et le prototype d'appel de la procédure (*extpgm)
+   -    je génère le programme de test (avec la boucle sur l
+   - je recherche les x-ref sur le *PGM/*SRVPGM (dsppgmref) pour un éventuel mocking 
+   -	*FILES
+   -    *PGM / *SRVPGM
+   -    j'alimente la table des x-ref 
+   
+   
+   
+   
+   
+   
+   
