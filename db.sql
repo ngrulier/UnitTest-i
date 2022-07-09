@@ -19,4 +19,5 @@ LABEL ON COLUMN NGRULIER2.UT_OBJECT_REFERENTIAL
 	TEST_NAME TEXT IS 'name of the unit test' , 
 	TEST_DESCRIPTION TEXT IS 'Description' , 
 	OBJECT_NAME TEXT IS 'name of the object tested' , 
-	OBJECT_TYPE TEXT IS 'type of the tested object' ) ; 
+	OBJECT_TYPE TEXT IS 'type of the tested object' 
+) ; 
